@@ -1,5 +1,5 @@
 'use client'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import React, { FormEvent, useRef } from 'react'
 
 const Auth = () => {
@@ -29,7 +29,8 @@ const Auth = () => {
     const router = useRouter();
 
     return (
-        <div>
+        <div className='py-10'>
+            <h1>Authentication and Authorization</h1>
             <form onSubmit={handleForm}>
                 <input className='border rounded-lg py-2 px-8' ref={email} type="text" name="email" placeholder="Email" />
 

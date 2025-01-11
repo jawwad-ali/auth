@@ -26,7 +26,7 @@ const Discount = () => {
 
     return (
         <div>
-
+            <h1>Discount</h1>
             <form onSubmit={handleDiscount}>
                 <input className='border rounded-lg py-2 px-8' ref={coupon} type="text" name="coupon" placeholder="For Discount" />
 

@@ -6,11 +6,16 @@ import { usePathname } from 'next/navigation'
 
 const MainNavbar = () => {
 
-    const pathname = usePathname()
-    console.log(pathname)
+    const url = usePathname()
+    console.log(url)
     return (
         <div>
-            {pathname === '/admin' ? <NavbarOne /> : <NavbarTwo />}
+            {
+                /* Conditional rendering. Rendering the <NavbarOne /> if the route is admin.
+                    /* Rendering the <NavbarTwo /> if the route is student.
+                */
+            }
+            {url === '/admin' ? <NavbarOne /> : <NavbarTwo />}
         </div>
     )
 }
